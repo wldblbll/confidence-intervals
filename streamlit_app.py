@@ -26,7 +26,7 @@ def get_proportion_bounds(n, r, z):
     # Confidence Interval Lower Bound
     cilb = (A-B)/C
     # Confidence Interval Upper Bound
-    ciup = (A+B)/C
+    ciub = (A+B)/C
     return cilb, ciub
 
 
