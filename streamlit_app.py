@@ -39,7 +39,7 @@ if CI_type=="Proportions":
     n = streamlit.sidebar.number_input("N (size)", min_value=0, max_value=10000000, value=10)
     r = streamlit.sidebar.number_input("r (observed occurences)", min_value=0, max_value=n, value=0)
     z_dic = {"90%":1.645, "95%":1.960, "99%":2.576}
-    confidence_level = streamlit.sidebar.selectbox("Confidence level", z_dic.keys())    
+    confidence_level = streamlit.sidebar.selectbox("Confidence level", list(z_dic.keys()))    
     z = z_dic[confidence_level]
     cilb, ciub = get_proportion_bounds(n, r, z)
 
