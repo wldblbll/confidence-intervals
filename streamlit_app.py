@@ -45,7 +45,7 @@ if CI_type=="Proportions":
 
     streamlit.write(f"for n={n} and r={r}")
     streamlit.write("measured proportion is %.1f%%" % (float(r/n)*100))
-    streamlit.write("CI (pourcent) is [%.1f%%  , %.1f%%]" % (cilb*100, ciub*100))
-    streamlit.write("CI (count) is [%.1f%%  , %.1f%%]" % (cilb*n, ciub*n))
+    streamlit.write("CI (%%) is [%.1f%%  , %.1f%%]" % (cilb*100, ciub*100))
+    streamlit.write("CI (count) is [%.1f  , %.1f]" % (cilb*n, ciub*n))
 
 
