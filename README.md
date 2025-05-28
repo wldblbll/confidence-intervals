@@ -1,1 +1,1 @@
-# confidence-intervals
+# confidence-intervals calculation
